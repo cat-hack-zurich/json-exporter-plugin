@@ -36,6 +36,14 @@ runPlugin();
 
 ## Testing model integration
 
+To build and make available
+```bash
+npm i @types/node -D
+npm run build
+npm link
+npm ls -g --depth=0 --link=true #to see the plugin path to use in the manifest 'path' field
+```
+
 ### Using local links
 
 For using locally developed model in `IF Framework` please follow these steps: 
